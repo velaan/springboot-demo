@@ -1,0 +1,35 @@
+div.border {
+   border: 1px solid black; 
+}
+
+td.valide {
+    color: #5cb85c;
+}
+
+td.enattente {
+    color: #337ab7;
+}
+
+td.finvalidite, td.expire {
+    color: #f0ad4e;
+}
+
+td.rejete {
+    color: #d9534f;
+}
+
+.btn-vertical {
+    margin-bottom: 10px;
+}
+
+.btn-aide {
+    border-radius:15px;
+    padding:0px 6px; 
+    margin-top:6px;
+}
+
+@media (min-width:768px) {
+    .btn-aide {
+        margin:6px 0 0 -20px;
+    }
+}

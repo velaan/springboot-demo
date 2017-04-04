@@ -1,0 +1,267 @@
+/**************************************/
+/************** GLOBAL ****************/
+/**************************************/
+
+body {	 
+    margin: 0;
+    position: relative;
+    background-color:#eeeeee;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #AE2573;
+}
+
+h1 {
+    margin:10px 0 20px 0;
+}
+
+h2 {
+    margin:15px 0 10px 0;
+}
+
+#contenu {
+    padding-bottom:120px;
+}
+
+/**************************************/
+/*************** HEADER ***************/
+/**************************************/
+    
+@media (min-width:768px) {
+    .navbar-brand {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width:767px) {
+    #main-navbar #form-logout {
+        border:none;
+        box-shadow:inherit;
+        margin-right:0px;
+        margin-left:0px;
+    }
+    
+    #main-navbar #user-block .nav {
+        margin:0;
+    }
+}
+    
+.navbar-brand > img {
+    display:inline;
+    margin-right:20px;
+}
+
+#user-block {
+        margin-right: -15px;
+}
+
+#main-navbar {
+    margin-bottom: 5px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.176);
+}
+
+
+#main-navbar .nav > li:hover {
+    background-color: #000000;
+}
+
+#main-navbar .nav > li#auth {
+    border-left: 1px solid #888888;
+    margin-left:6px;
+    display:table;
+}
+
+#main-navbar .nav > li#auth a {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#main-navbar .nav > li#auth .btn-link {
+    padding-left:0px;
+    padding-right:0px;
+    text-align: right;
+}
+
+#main-navbar .nav > li#auth .btn-link:hover {
+    text-decoration:none;
+}
+
+#main-navbar .nav > li#auth.impersonate {
+    background-color:#ee2222;
+}
+
+#main-navbar .nav > li#auth.impersonate a {
+    color:#FFFFFF;
+}
+
+#main-navbar .nav > li.raccourci a, #main-navbar .nav > li.raccourci a:hover {
+    padding-left:5px;
+    padding-right:5px;
+    background-color: #inherit;
+}
+
+#main-navbar #form-logout {
+    padding: 0 15px;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+#ident {
+    text-align:right;
+    font-size:0.8em;
+    color: #AE2573;
+    margin-right:15px;
+    margin-bottom:5px;
+}
+
+/**************************************/
+/************* MENU *******************/
+/**************************************/
+
+#menu .navbar-nav > li > a:hover {
+    background-color: #F0F0F0;
+}
+
+/**************************************/
+/************ MESSAGES ****************/
+/**************************************/
+
+div.alert {
+    background: #fff6bf url('../images/msg_warning.png') center no-repeat;
+    background-position: 15px 10px;
+    padding:8px 15px 8px 45px;
+    margin-top:10px;
+}
+
+div.alert-success {
+    background: #E7FFD6 url('../images/msg_ok.png') center no-repeat;
+    background-position: 15px 10px;
+}
+
+div.alert-info{
+    background: #E7F3FF url('../images/msg_info.png') center no-repeat;
+    background-position: 15px 10px;
+}
+
+div.alert-danger {
+    background: #FFE7E7 url('../images/msg_error.png') center no-repeat;
+    background-position: 15px 10px;
+
+}
+
+.text-success {
+  color: #3c763d;
+}
+
+.text-info {
+  color: #31708f;
+}
+
+.text-warning {
+  color: #8a6d3b;
+}
+
+.text-danger {
+  color: #a94442;
+}
+
+/**************************************/
+/************* ONGLETS ****************/
+/**************************************/
+
+.nav-tabs > li a {
+    text-decoration: none;
+    margin-right:0;
+}
+
+.nav-tabs > li {
+    background-color: #EEEEEE;
+    margin-right: 5px;
+}
+
+.nav-tabs > li.active {
+    font-weight: bold;
+}
+
+
+/**************************************/
+/************* FOOTER *****************/
+/**************************************/
+
+.form-group.required .control-label:before{
+   content: "*";
+   position: absolute;
+   margin-left: -15px;
+}
+
+#footer {
+    border-top: 2px solid #AE2573;
+    background-color:#382f2d;
+    font-size: 10px;
+    position: relative;
+    margin-top: -100px; /* VALEUR NEGATIVE DE LA HAUTEUR DU FOOTER */
+    height: 100px;
+    clear:both;
+    width: 100%;    
+    padding:8px;
+}
+
+#footer01 {
+    background-image: url("../images/logo-blanc.png");
+    background-repeat: no-repeat;
+    height: 84px;
+}
+
+/**************************/
+/****** FORMULAIRES *******/
+/**************************/
+.form-control.date, .form-control.datetimepicker {
+     cursor:pointer;
+}
+
+.form-control.date .glyphicon, .form-control.datetimepicker .glyphicon {
+     font-size:18px;
+}
+
+legend {
+    color: #AE2573;
+} 
+
+#wrap {
+    min-height: 100%;
+}
+
+
+/****** DANDELLION *******/
+table.dataTable thead > tr > th {
+    padding-right:0px !important;
+}
+
+table.dataTable thead > tr > th.sorting, 
+table.dataTable thead > tr > th.sorting_desc, 
+table.dataTable thead > tr > th.sorting_asc {
+    padding-left:30px;
+}
+
+table.dataTable thead .sorting::after, 
+table.dataTable thead .sorting_asc::after, 
+table.dataTable thead .sorting_desc::after {
+    right:auto !important;
+    left:8px;
+}
