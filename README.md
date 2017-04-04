@@ -1,6 +1,7 @@
-# Registration and Login Example with Spring Security, Spring Boot, Spring Data JPA, HSQL, JSP
+# Démo Spring Boot pour Min2Rien
 
-## Guide
+## Références
+L'application se base en partie sur la démonstration de hellokoding : 
 https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/
 
 ## Prerequisites
